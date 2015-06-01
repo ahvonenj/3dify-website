@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            *
+            {
+                margin: 0 0 0 15; 
+                padding: 0;
+            }
+            
+            body
+            {
+                font-family: Consolas, Tahoma, Arial;   
+                overflow: hidden;
+            }
+            
+            .box
+            {
+                table-layout: fixed;
+                width: 350px;
+                height: 150px;
+                margin-top: 5px;
+                border-spacing: 15px;
+            }
+            
+            .box td
+            {
+                 border: 1px solid black;   
+                text-align: center;
+               
+            }
+        </style>
+        
+        <script src = "//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src = "jquery.transit.min.js"></script>
+        <script src = "jquery.mousewheel.min.js"></script>
+        <script src = "index.js"></script>
+    </head>
+    <body>
+        <h1>Hello!</h1>
+        <p>This website is 3d-ish.</p><br/>
+        
+        <p>You can...</p>
+        <ul>
+            <li>Rotate it by holding down the mousewheel</li>
+            <li>Span it by holding down the right mouse button</li>
+            <li>Zoom it by holding down left alt and scrolling with the mousewheel</li>
+        </ul>
+        
+        <br/><br/>
+        
+        <p>Have some boxes to visualize the effect:</p>
+        
+        <br/>
+        
+        <table class = "box">
+            <tr>
+                <td>A box.</td>
+            </tr>
+        </table>
+        
+        <table class = "box">
+            <tr>
+                <td>A box.</td>
+                <td>A box.</td>
+            </tr>
+        </table>
+    </body>
+</html>
